@@ -1,4 +1,4 @@
-# Edulance — Functional Document
+# Edulance
 
 ## Overview
 This document outlines the key features, requirements, and data flow of **Edulance**.  
