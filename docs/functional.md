@@ -69,9 +69,8 @@ Authorization in **Edulance** is role-based, granting different permissions to *
 2. **Email Verification:** Upon registration, users must verify their email before accessing the platform.  
 3. **Role-Based Access:** Admins have elevated permissions to manage users, skills, and posts.  
 4. **Post Creation:** Authenticated users can create posts for hackathons or group projects.  
-5. **Skill Management:** Admins can create and manage skills used in posts.  
-6. **Application Submission:** Authenticated users can apply to open posts before deadlines.  
-7. **Deadline Validation:** The system should automatically prevent applications after the last date.
+5. **Application Submission:** Authenticated users can apply to open posts before deadlines.  
+6. **Deadline Validation:** The system should automatically prevent applications after the last date.
 
 ---
 
