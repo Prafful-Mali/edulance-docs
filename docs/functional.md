@@ -51,7 +51,7 @@ Authorization in **Edulance** is role-based, granting different permissions to *
 - **Post Creation and Management:** Users can create, update, and delete posts for hackathons or group projects, specifying the number of required participants, description, required skills, and application deadline.  
 - **Skill Tagging:** Posts can include specific skills to attract suitable applicants.  
 - **Application System:** Authenticated users can apply to open posts before the application deadline.  
-- **Admin Management:** Admins can manage users, posts, and skills through the Django admin interface.
+- **Admin Management:** Admins can manage users, posts, and skills.
 - **Progressive Web App (PWA):** The platform will be developed as a Progressive Web App to provide an app-like experience, offline access, and better performance on all devices
 
 ---
@@ -95,3 +95,6 @@ Authorization in **Edulance** is role-based, granting different permissions to *
 #### Frontend
 - **Technologies:** HTML, CSS, JavaScript  
 - **Framework:** Bootstrap  
+
+### Schema Diagram
+![Data Flow](images/image4.png)
