@@ -40,6 +40,10 @@ Authorization in **Edulance** is role-based, granting different permissions to *
 
 ---
 
+### Data Flow Diagram
+![Data Flow](images/image3.png)
+
+---
 ## In Scope
 
 - **Account Management:** Users can register and log in.  
@@ -48,6 +52,7 @@ Authorization in **Edulance** is role-based, granting different permissions to *
 - **Skill Tagging:** Posts can include specific skills to attract suitable applicants.  
 - **Application System:** Authenticated users can apply to open posts before the application deadline.  
 - **Admin Management:** Admins can manage users, posts, and skills through the Django admin interface.
+- **Progressive Web App (PWA):** The platform will be developed as a Progressive Web App to provide an app-like experience, offline access, and better performance on all devices
 
 ---
 
