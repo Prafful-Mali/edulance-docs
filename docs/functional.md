@@ -82,13 +82,13 @@ Authorization in **Edulance** is role-based, granting different permissions to *
 ### Technical Requirements
 
 #### Backend
-- **Framework:** Django with Django REST Framework (DRF) for REST APIs  
-- **Language:** Python  
+- **Framework:** Django(5.2.8) with Django REST Framework(3.16.1) for REST APIs  
+- **Language:** Python(3.12)  
 - **Authentication:** JWT-based authentication with email verification  
 - **Email Verification:** Implemented via Django’s email backend to send verification links to users during registration  
-- **Database:** PostgreSQL  
+- **Database:** PostgreSQL(14.19)  
 - **Validation:** Model and serializer-level input validation  
-- **Testing:** Pytest for backend testing  
+- **Testing:** Pytest(9.0.0) for backend testing  
 - **Environment Management:** `uv` for virtual environment and dependency management  
 - **Deployment:** Docker support with environment configuration files (`.env`)
 
@@ -98,3 +98,6 @@ Authorization in **Edulance** is role-based, granting different permissions to *
 
 ### Schema Diagram
 ![Data Flow](images/image4.png)
+
+### Architecture Diagram
+![Architecture Diagram](images/image5.png)
