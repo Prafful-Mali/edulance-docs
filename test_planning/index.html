@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>Edulance - My Docs</title>
+        <title>Test Plan – Edulance Platform - My Docs</title>
         <link href="../css/bootstrap.min.css" rel="stylesheet">
         <link href="../css/fontawesome.min.css" rel="stylesheet">
         <link href="../css/brands.min.css" rel="stylesheet">
@@ -38,10 +38,10 @@
                                 <a href=".." class="nav-link">Business Use Case — Edulance</a>
                             </li>
                             <li class="nav-item">
-                                <a href="./" class="nav-link active" aria-current="page">Edulance</a>
+                                <a href="../functional/" class="nav-link">Edulance</a>
                             </li>
                             <li class="nav-item">
-                                <a href="../test_planning/" class="nav-link">Test Plan – Edulance Platform</a>
+                                <a href="./" class="nav-link active" aria-current="page">Test Plan – Edulance Platform</a>
                             </li>
                         </ul>
 
@@ -52,12 +52,12 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a rel="prev" href=".." class="nav-link">
+                                <a rel="prev" href="../functional/" class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" href="../test_planning/" class="nav-link">
+                                <a rel="next" class="nav-link disabled">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -79,25 +79,33 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-bs-level="1"><a href="#edulance" class="nav-link">Edulance</a>
+            <li class="nav-item" data-bs-level="1"><a href="#test-plan-edulance-platform" class="nav-link">Test Plan – Edulance Platform</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-bs-level="2"><a href="#overview" class="nav-link">Overview</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-bs-level="2"><a href="#core-features" class="nav-link">Core Features</a>
+            <li class="nav-item" data-bs-level="2"><a href="#objective-scope" class="nav-link">Objective &amp; Scope</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#in-scope" class="nav-link">In Scope</a>
+            <li class="nav-item" data-bs-level="2"><a href="#test-strategy" class="nav-link">Test Strategy</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#out-of-scope" class="nav-link">Out of Scope</a>
+            <li class="nav-item" data-bs-level="2"><a href="#test-coverage-goals" class="nav-link">Test Coverage Goals</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#requirements" class="nav-link">Requirements</a>
+            <li class="nav-item" data-bs-level="2"><a href="#execution-plan" class="nav-link">Execution Plan</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#roles-responsibilities" class="nav-link">Roles &amp; Responsibilities</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#entry-exit-criteria" class="nav-link">Entry &amp; Exit Criteria</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#risks-mitigation" class="nav-link">Risks &amp; Mitigation</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -108,95 +116,82 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="edulance">Edulance</h1>
-<h2 id="overview">Overview</h2>
-<p>This document outlines the key features, requirements, and data flow of <strong>Edulance</strong>.<br />
-The platform enables users to create or join hackathons and group projects.<br />
-Each user can securely log in, post collaboration opportunities, and find teammates based on relevant skills and project requirements.</p>
+<h1 id="test-plan-edulance-platform">Test Plan – Edulance Platform</h1>
 <hr />
-<h2 id="core-features">Core Features</h2>
-<h3 id="authentication">Authentication</h3>
-<p>If a user is not registered, they can create an account by providing a <strong>username</strong>, <strong>email</strong>, and <strong>password</strong>.<br />
-After registration, a verification email is sent to the provided email address.<br />
-Once the user verifies their email, the account becomes active, allowing them to access the platform.</p>
-<p>If the user is already registered, they can log in using their credentials.<br />
-Upon successful authentication, they are redirected to the <strong>Home Page</strong>.<br />
-If the credentials are invalid, an error message prompts them to re-enter their information.</p>
-<p><img alt="Authentication Flow" src="../images/image.png" /></p>
-<hr />
-<h3 id="authorization">Authorization</h3>
-<p>Authorization in <strong>Edulance</strong> is role-based, granting different permissions to <strong>Admins</strong> and <strong>Users</strong>.</p>
-<h4 id="admin-capabilities">Admin Capabilities</h4>
+<h2 id="objective-scope">Objective &amp; Scope</h2>
 <ul>
-<li>Can add or remove any user  </li>
-<li>Can add, remove, or update skills  </li>
-<li>Can update or delete any post  </li>
-</ul>
-<h4 id="user-capabilities">User Capabilities</h4>
-<ul>
-<li>Can create, update, or delete their own posts  </li>
-<li>Can join available posts created by others  </li>
-<li>Can view applicants for their posts  </li>
-<li>Can connect with other users via email  </li>
-</ul>
-<p><img alt="Authorization Roles" src="../images/image2.png" /></p>
-<hr />
-<h3 id="data-flow-diagram">Data Flow Diagram</h3>
-<p><img alt="Data Flow" src="../images/image3.png" /></p>
-<hr />
-<h2 id="in-scope">In Scope</h2>
-<ul>
-<li><strong>Account Management:</strong> Users can register and log in.  </li>
-<li><strong>Authentication and Authorization:</strong> JWT-based authentication with role-based access control (Admin and User roles).  </li>
-<li><strong>Post Creation and Management:</strong> Users can create, update, and delete posts for hackathons or group projects, specifying the number of required participants, description, required skills, and application deadline.  </li>
-<li><strong>Skill Tagging:</strong> Posts can include specific skills to attract suitable applicants.  </li>
-<li><strong>Application System:</strong> Authenticated users can apply to open posts before the application deadline.  </li>
-<li><strong>Admin Management:</strong> Admins can manage users, posts, and skills.</li>
-<li><strong>Progressive Web App (PWA):</strong> The platform will be developed as a Progressive Web App to provide an app-like experience, offline access, and better performance on all devices</li>
+<li>Ensure all core functionalities of the Edulance platform (authentication, user profiles, skills, projects, and search) work as intended.  </li>
+<li>Validate the platform’s API and frontend behavior.  </li>
+<li>Scope covers functional testing, basic UI testing, and role-based access validation.</li>
 </ul>
 <hr />
-<h2 id="out-of-scope">Out of Scope</h2>
+<h2 id="test-strategy">Test Strategy</h2>
 <ul>
-<li>Forgot Password feature  </li>
-<li>Rejecting or approving applications (no status tracking)  </li>
-<li>Sending direct messages or notifications between users  </li>
-<li>Commenting or asking questions on posts  </li>
-<li>Team creation and management after application acceptance  </li>
+<li><strong>Functional Testing:</strong> Verify each feature against acceptance criteria.  </li>
+<li><strong>API Testing (DRF):</strong> Validate all endpoints using valid/invalid inputs.  </li>
+<li><strong>UI Testing:</strong> Confirm correct rendering, validation messages, and error handling.  </li>
+<li><strong>Role-Based Testing:</strong> Validate permissions for normal users and admin users.  </li>
+<li><strong>Regression Testing:</strong> Execute after major changes to ensure stability.</li>
 </ul>
 <hr />
-<h2 id="requirements">Requirements</h2>
-<h3 id="functional-requirements">Functional Requirements</h3>
-<ol>
-<li><strong>User Authentication:</strong> Users should be able to register, log in, and authenticate using JWT tokens.  </li>
-<li><strong>Email Verification:</strong> Upon registration, users must verify their email before accessing the platform.  </li>
-<li><strong>Role-Based Access:</strong> Admins have elevated permissions to manage users, skills, and posts.  </li>
-<li><strong>Post Creation:</strong> Authenticated users can create posts for hackathons or group projects.  </li>
-<li><strong>Application Submission:</strong> Authenticated users can apply to open posts before deadlines.  </li>
-<li><strong>Deadline Validation:</strong> The system should automatically prevent applications after the last date.</li>
-</ol>
+<h2 id="test-coverage-goals">Test Coverage Goals</h2>
+<ul>
+<li>Authentication (login, logout, restricted pages)  </li>
+<li>User profiles (view/update)  </li>
+<li>Skills &amp; categories (create/edit/delete by admin)  </li>
+<li>Projects &amp; collaboration  </li>
+<li>Global search (users, skills, projects)  </li>
+<li>Access control rules  </li>
+<li>Error handling and validation messages  </li>
+</ul>
 <hr />
-<h3 id="technical-requirements">Technical Requirements</h3>
-<h4 id="backend">Backend</h4>
+<h2 id="execution-plan">Execution Plan</h2>
 <ul>
-<li><strong>Framework:</strong> Django(5.2.8) with Django REST Framework(3.16.1) for REST APIs  </li>
-<li><strong>Language:</strong> Python(3.12)  </li>
-<li><strong>Authentication:</strong> JWT-based authentication with email verification  </li>
-<li><strong>Email Verification:</strong> Implemented via Django’s email backend to send verification links to users during registration  </li>
-<li><strong>Database:</strong> PostgreSQL(14.19)  </li>
-<li><strong>Validation:</strong> Model and serializer-level input validation  </li>
-<li><strong>Testing:</strong> Pytest(9.0.0) for backend testing  </li>
-<li><strong>Environment Management:</strong> <code>uv</code> for virtual environment and dependency management  </li>
-<li><strong>Deployment:</strong> Docker support with environment configuration files (<code>.env</code>)</li>
+<li>Identify core modules and prepare test scenarios.  </li>
+<li>Begin with API testing, then UI testing.  </li>
+<li>Execute tests in the staging environment before deployment.  </li>
+<li>Track defects, validate fixes, and re-test.  </li>
+<li>Perform a final round of regression before release.</li>
 </ul>
-<h4 id="frontend">Frontend</h4>
+<hr />
+<h2 id="roles-responsibilities">Roles &amp; Responsibilities</h2>
 <ul>
-<li><strong>Technologies:</strong> HTML, CSS, JavaScript  </li>
-<li><strong>Framework:</strong> Bootstrap  </li>
+<li><strong>Tester:</strong> Execute test cases, document defects, perform regression testing.  </li>
+<li><strong>Developer:</strong> Fix issues, support with clarifications, and implement enhancements.  </li>
+<li><strong>Project Lead:</strong> Approve test plans, ensure resources, monitor progress.  </li>
+<li><strong>Admin/DevOps (optional):</strong> Manage staging environments and deployments.</li>
 </ul>
-<h3 id="schema-diagram">Schema Diagram</h3>
-<p><img alt="Data Flow" src="../images/image4.png" /></p>
-<h3 id="architecture-diagram">Architecture Diagram</h3>
-<p><img alt="Architecture Diagram" src="../images/image5.png" /></p></div>
+<hr />
+<h2 id="entry-exit-criteria">Entry &amp; Exit Criteria</h2>
+<h3 id="entry-criteria">Entry Criteria</h3>
+<ul>
+<li>All required features are developed and deployed to staging.  </li>
+<li>APIs are stable and accessible.  </li>
+<li>Test data is prepared for users, skills, and projects.</li>
+</ul>
+<h3 id="exit-criteria">Exit Criteria</h3>
+<ul>
+<li>All critical and major defects are resolved.  </li>
+<li>Regression testing is complete with no blockers.  </li>
+<li>System is stable for production deployment.</li>
+</ul>
+<hr />
+<h2 id="risks-mitigation">Risks &amp; Mitigation</h2>
+<h3 id="risks">Risks</h3>
+<ul>
+<li>Incomplete feature development may delay testing.  </li>
+<li>API instability can block UI testing.  </li>
+<li>Limited test data can affect test coverage.  </li>
+<li>Changing requirements may cause rework.</li>
+</ul>
+<h3 id="mitigation">Mitigation</h3>
+<ul>
+<li>Early coordination with developers for feature readiness.  </li>
+<li>Maintain stable staging environments.  </li>
+<li>Prepare reusable test data sets.  </li>
+<li>Regular sync-ups to handle requirement changes early.</li>
+</ul>
+<hr /></div>
             </div>
         </div>
 
