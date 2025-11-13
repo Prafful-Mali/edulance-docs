@@ -23,7 +23,7 @@
 - User profiles (view/update)
 - Skills & categories (create/edit/delete by admin)  
 - Post & collaboration  
-- Global search (Post)  
+- Global search (Post)
 - Access control rules  
 - Error handling and validation messages  
 
