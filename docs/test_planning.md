@@ -3,7 +3,7 @@
 ---
 
 ## Objective & Scope
-- Ensure all core functionalities of the Edulance platform (authentication, user profiles, skills, projects, and search) work as intended.  
+- Ensure all core functionalities of the Edulance platform (authentication, user profiles, skills, Post, and search) work as intended.  
 - Validate the platform’s API and frontend behavior.  
 - Scope covers functional testing, basic UI testing, and role-based access validation.
 
@@ -20,10 +20,10 @@
 
 ## Test Coverage Goals
 - Authentication (login, logout, restricted pages)  
-- User profiles (view/update)  
+- User profiles (view/update)
 - Skills & categories (create/edit/delete by admin)  
-- Projects & collaboration  
-- Global search (users, skills, projects)  
+- Post & collaboration  
+- Global search (Post)  
 - Access control rules  
 - Error handling and validation messages  
 
@@ -50,7 +50,7 @@
 ### Entry Criteria
 - All required features are developed and deployed to staging.  
 - APIs are stable and accessible.  
-- Test data is prepared for users, skills, and projects.
+- Test data is prepared for users, skills, and Post.
 
 ### Exit Criteria
 - All critical and major defects are resolved.  
