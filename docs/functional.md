@@ -26,9 +26,9 @@ If the credentials are invalid, an error message prompts them to re-enter their 
 Authorization in **Edulance** is role-based, granting different permissions to **Admins** and **Users**.
 
 #### Admin Capabilities
-- Can add or remove any user  
-- Can add, remove, or update skills  
-- Can update or delete any post  
+- Can see all the users and posts  
+- Can remove any user  
+- Can remove any post  
 
 #### User Capabilities
 - Can create, update, or delete their own posts  
@@ -50,8 +50,8 @@ Authorization in **Edulance** is role-based, granting different permissions to *
 - **Authentication and Authorization:** JWT-based authentication with role-based access control (Admin and User roles).  
 - **Post Creation and Management:** Users can create, update, and delete posts for hackathons or group projects, specifying the number of required participants, description, required skills, and application deadline.  
 - **Skill Tagging:** Posts can include specific skills to attract suitable applicants.  
-- **Application System:** Authenticated users can apply to open posts before the application deadline.  
-- **Admin Management:** Admins can manage users, posts, and skills.
+- **Application System:** Authenticated users can apply to open posts before.  
+- **Admin Management:** Admins can manage users, posts.
 - **Progressive Web App (PWA):** The platform will be developed as a Progressive Web App to provide an app-like experience, offline access, and better performance on all devices
 
 ---
@@ -72,10 +72,9 @@ Authorization in **Edulance** is role-based, granting different permissions to *
 
 1. **User Authentication:** Users should be able to register, log in, and authenticate using JWT tokens.  
 2. **Email Verification:** Upon registration, users must verify their email before accessing the platform.  
-3. **Role-Based Access:** Admins have elevated permissions to manage users, skills, and posts.  
+3. **Role-Based Access:** Admins have elevated permissions to manage users, and posts.  
 4. **Post Creation:** Authenticated users can create posts for hackathons or group projects.  
-5. **Application Submission:** Authenticated users can apply to open posts before deadlines.  
-6. **Deadline Validation:** The system should automatically prevent applications after the last date.
+5. **Application Submission:** Authenticated users can apply to open posts.  
 
 ---
 
