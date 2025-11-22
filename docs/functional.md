@@ -34,7 +34,6 @@ Authorization in **Edulance** is role-based, granting different permissions to *
 - Can create, update, or delete their own posts  
 - Can join available posts created by others  
 - Can view applicants for their posts  
-- Can connect with other users via email  
 
 ![Authorization Roles](images/image2.png)
 
@@ -46,13 +45,16 @@ Authorization in **Edulance** is role-based, granting different permissions to *
 ---
 ## In Scope
 
-- **Account Management:** Users can register and log in.  
+- **Account Management:** Users can register and log in securely.  
 - **Authentication and Authorization:** JWT-based authentication with role-based access control (Admin and User roles).  
-- **Post Creation and Management:** Users can create, update, and delete posts for hackathons or group projects, specifying the number of required participants, description, required skills, and application deadline.  
-- **Skill Tagging:** Posts can include specific skills to attract suitable applicants.  
-- **Application System:** Authenticated users can apply to open posts before.  
-- **Admin Management:** Admins can manage users, posts.
-- **Progressive Web App (PWA):** The platform will be developed as a Progressive Web App to provide an app-like experience, offline access, and better performance on all devices
+- **Post Creation and Management:** Users can create, update, and delete posts for hackathons or group projects, specifying participants required, description, skills, and application deadline.  
+- **Skill Tagging:** Posts allow tagging multiple skills to attract suitable applicants.  
+- **Application System:** Authenticated users can apply to available posts.  
+- **Admin Management:** Admins can delete users and posts.  
+- **Progressive Web App (PWA):** Fully implemented PWA providing an app-like experience, offline support, and improved performance.  
+- **AWS EC2 Deployment:** Application successfully deployed on AWS EC2 with environment configuration and server setup.  
+- **CI/CD Pipeline:** Complete GitHub Actions CI/CD pipeline implemented, including automated testing, security scanning (Trivy), and deployment to EC2.
+
 
 ---
 
@@ -89,7 +91,6 @@ Authorization in **Edulance** is role-based, granting different permissions to *
 - **Validation:** Model and serializer-level input validation  
 - **Testing:** Pytest(9.0.0) for backend testing  
 - **Environment Management:** `uv` for virtual environment and dependency management  
-- **Deployment:** Docker support with environment configuration files (`.env`)
 
 #### Frontend
 - **Technologies:** HTML, CSS, JavaScript  
