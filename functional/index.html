@@ -137,7 +137,6 @@ If the credentials are invalid, an error message prompts them to re-enter their 
 <li>Can create, update, or delete their own posts  </li>
 <li>Can join available posts created by others  </li>
 <li>Can view applicants for their posts  </li>
-<li>Can connect with other users via email  </li>
 </ul>
 <p><img alt="Authorization Roles" src="../images/image2.png" /></p>
 <hr />
@@ -146,13 +145,15 @@ If the credentials are invalid, an error message prompts them to re-enter their 
 <hr />
 <h2 id="in-scope">In Scope</h2>
 <ul>
-<li><strong>Account Management:</strong> Users can register and log in.  </li>
+<li><strong>Account Management:</strong> Users can register and log in securely.  </li>
 <li><strong>Authentication and Authorization:</strong> JWT-based authentication with role-based access control (Admin and User roles).  </li>
-<li><strong>Post Creation and Management:</strong> Users can create, update, and delete posts for hackathons or group projects, specifying the number of required participants, description, required skills, and application deadline.  </li>
-<li><strong>Skill Tagging:</strong> Posts can include specific skills to attract suitable applicants.  </li>
-<li><strong>Application System:</strong> Authenticated users can apply to open posts before.  </li>
-<li><strong>Admin Management:</strong> Admins can manage users, posts.</li>
-<li><strong>Progressive Web App (PWA):</strong> The platform will be developed as a Progressive Web App to provide an app-like experience, offline access, and better performance on all devices</li>
+<li><strong>Post Creation and Management:</strong> Users can create, update, and delete posts for hackathons or group projects, specifying participants required, description, skills, and application deadline.  </li>
+<li><strong>Skill Tagging:</strong> Posts allow tagging multiple skills to attract suitable applicants.  </li>
+<li><strong>Application System:</strong> Authenticated users can apply to available posts.  </li>
+<li><strong>Admin Management:</strong> Admins can delete users and posts.  </li>
+<li><strong>Progressive Web App (PWA):</strong> Fully implemented PWA providing an app-like experience, offline support, and improved performance.  </li>
+<li><strong>AWS EC2 Deployment:</strong> Application successfully deployed on AWS EC2 with environment configuration and server setup.  </li>
+<li><strong>CI/CD Pipeline:</strong> Complete GitHub Actions CI/CD pipeline implemented, including automated testing, security scanning (Trivy), and deployment to EC2.</li>
 </ul>
 <hr />
 <h2 id="out-of-scope">Out of Scope</h2>
@@ -185,7 +186,6 @@ If the credentials are invalid, an error message prompts them to re-enter their 
 <li><strong>Validation:</strong> Model and serializer-level input validation  </li>
 <li><strong>Testing:</strong> Pytest(9.0.0) for backend testing  </li>
 <li><strong>Environment Management:</strong> <code>uv</code> for virtual environment and dependency management  </li>
-<li><strong>Deployment:</strong> Docker support with environment configuration files (<code>.env</code>)</li>
 </ul>
 <h4 id="frontend">Frontend</h4>
 <ul>
